@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS</title>
+    <!-- ------------------------------------------------------------------ -->
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ------------------------------------------------------------------ -->
+  </head>
+  <body>
+    <div class="container CRUDS">
+      <!-- head -->
+      <div class="head">
+        <h2>Al Sadiq Group</h2>
+        <p>
+          "Oulad Elged Shops for Ironware and Paints, and Computer Coloring
+          Center"
+        </p>
+      </div>
+
+      <!-- inputs -->
+      <div class="inputs">
+        <input type="text" id="title" placeholder="title" />
+
+        <!-- price -->
+        <div class="price">
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="price"
+            placeholder="Price"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="texes"
+            placeholder="texes"
+          />
+          <small id="total"></small>
+        </div>
+
+        <button id="sub">Create</button>
+      </div>
+
+      <!-- outputs -->
+      <div class="outputs">
+        <!-- search-Blok -->
+        <div class="search-Blok">
+          <input
+            onkeyup="searchData(this.value)"
+            type="text"
+            placeholder="Search By Title"
+            id="search"
+          />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div id="Delete-All"></div>
+        <table>
+          <tr>
+            <th>id</th>
+            <th>title</th>
+            <th>price</th>
+            <th>taxes</th>
+            <th>total</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ------------------------------------------------------------------ -->
+    <script src="js/activ.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
