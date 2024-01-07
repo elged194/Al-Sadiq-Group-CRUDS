@@ -27,7 +27,7 @@
 }
 @media only screen and (max-width: 375px) {
   .price small {
-    padding: 3px 39.1%;
+    padding: 3px 15%;
   }
 }
 @media only screen and (max-width: 320px) {
@@ -35,7 +35,7 @@
     width: 100%;
   }
   .price small {
-    padding: 3px 37%;
+    padding: 3px 15%;
   }
   .inputs #count,
   .inputs #category {
